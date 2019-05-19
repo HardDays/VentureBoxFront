@@ -33,5 +33,10 @@ input, button, textarea, select {
 
     &__footer {
         flex: 0 0 auto;
+
+        @media (max-width: 767px) {
+            position: relative;
+            overflow: hidden;
+        }
     }
 }

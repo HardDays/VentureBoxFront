@@ -1,15 +1,28 @@
 @import "layout/var";
 
 .registr-form {
-   max-width: 740px;
+   max-width: 770px;
    margin: 0 auto;
-   padding: 60px 0;
+   padding: 60px 15px;
+
+   @media (max-width: 767px) {
+       padding: 40px 0;
+   }
+
+   &__xs-padding {
+       padding: 0 16px;
+   }
 
    &__title {
        text-align: center;
        font-weight: $bold;
        font-size: 38px;
        margin-bottom: 37px;
+
+       @media (max-width: 767px) {
+           font-size: 28px;
+           margin-bottom: 22px;
+       }
    }
 
    &__sub-title {
@@ -17,6 +30,11 @@
        text-align: center;
        font-size: 26px;
        margin-bottom: 28px;
+
+       @media (max-width: 767px) {
+           font-size: 20px;
+
+       }
    }
 
    &__width {
@@ -34,9 +52,34 @@
 
    &__input-groupe {
        margin-bottom: 19px;
+
+       &--none-margin {
+            margin-bottom: 0;
+       }
    }
 
    &__form-groupe {
        margin-bottom: 40px;
+   }
+
+   &__agreement {
+       margin-bottom: 30px;
+   }
+
+   &__submit {
+       display: block;
+       width: 100%;
+       text-align: center;
+       font-weight: $medium;
+       color: #fff;
+       border-radius: 6px;
+       background: #231f20;
+       padding: 10px 0;
+       font-size: 18px;
+
+       &:hover {
+           color: #fff;
+           text-decoration: none;
+       }
    }
 }

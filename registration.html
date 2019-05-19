@@ -65,10 +65,12 @@
 		<!--here-->
 		<div class="row app-content vb-main__content vb-main__content--grey">
 			<form class="registr-form">
-				<h1 class="registr-form__title">Let’s discuss your business needs and how we can help</h1>
-				<p class="registr-form__sub-title">We are you interested in</p>
-				<div class="registr-form__width">
-					<div class="checkboxes-row checkboxes-row--nowrapp registr-form__checkboxes-row">
+				<div class="registr-form__xs-padding">
+					<h1 class="registr-form__title">Let’s discuss your business needs and how we can help</h1>
+					<p class="registr-form__sub-title">We are you interested in</p>
+				</div>
+				<div class="registr-form__width ">
+					<div class="checkboxes-row checkboxes-row--xs-max-width checkboxes-row--nowrapp registr-form__checkboxes-row">
 						<div class="one-checkbox checkboxes-row__check-box">
 							<div class="one-checkbox__check-style">
 								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-1">
@@ -100,13 +102,15 @@
 					</div>
 				</div>
 				<div class="registr-form__width">
-					<div class="input-groupe registr-form__input-groupe">
-						<label class="input-groupe__label" for="input-1">Website</label>
-						<input class="input-groupe__input" type="text" id="input-1" placeholder="http://">
-					</div>
-					<div class="input-groupe registr-form__input-groupe">
-						<label class="input-groupe__label" for="input-2">Company name</label>
-						<input class="input-groupe__input" type="text" id="input-2" placeholder="Company domain name or market name">
+					<div class="registr-form__xs-padding">
+						<div class="input-groupe registr-form__input-groupe">
+							<label class="input-groupe__label" for="input-1">Website</label>
+							<input class="input-groupe__input" type="text" id="input-1" placeholder="http://">
+						</div>
+						<div class="input-groupe registr-form__input-groupe">
+							<label class="input-groupe__label" for="input-2">Company name</label>
+							<input class="input-groupe__input" type="text" id="input-2" placeholder="Company domain name or market name">
+						</div>
 					</div>
 					<div class="form-groupe form-groupe--margin-top registr-form__form-groupe">
 						<p class="form-groupe__title">Personal data</p>
@@ -198,10 +202,11 @@
 						<div class="input-groupe registr-form__input-groupe">
 							<p class="input-groupe__label">Investor deck</p>
 							<div class="input-groupe__tabs">
-								<label class="input-groupe__tabs-" for="input-link">Add link</label>
+								<label class="input-groupe__tabs-label" for="input-link">Add link</label>
+								<label class="input-groupe__tabs-label input-groupe__tabs-label--white" for="input-file">Upload file</label>
 							</div>
 							<div class="input-groupe__flex-file">
-								<input class="input-groupe__input" type="text" id="input-link">
+								<input class="input-groupe__input input-groupe__input--none-radius-right" type="text" id="input-link">
 								<input class="input-groupe__input-file" type="file" id="input-file">
 								<label class="input-groupe__button-label" for="input-file"></label>
 							</div>
@@ -245,6 +250,71 @@
 							<textarea class="input-groupe__input input-groupe__input--textarea" id="input-9"></textarea>
 						</div>
 							
+					</div>
+					<div class="form-groupe registr-form__form-groupe">
+						<p class="form-groupe__title">Markets</p>
+						<div class="input-groupe registr-form__input-groupe">
+							<label class="input-groupe__label" for="input-30">Primary market</label>
+							<select class="input-groupe__input" id="input-30">
+								<option>Slovenia</option>
+								<option>USA</option>
+							</select>
+						</div>
+						<div class="input-groupe registr-form__input-groupe">
+							<label class="input-groupe__label" for="input-30">Target market</label>
+							<select class="input-groupe__input" id="input-30">
+								<option>USA</option>
+								<option>Slovenia</option>
+							</select>
+						</div>
+						
+					</div>
+					<div class="form-groupe registr-form__form-groupe">
+						
+						<div class="input-groupe registr-form__input-groupe registr-form__input-groupe--none-margin">
+						<p class="input-groupe__label input-groupe__label--more-margin">Target revenue</p>
+							<div class="checkboxes-row checkboxes-row--nowrapp registr-form__checkboxes-row registr-form__checkboxes-row--none-margin">
+								<div class="one-radio checkboxes-row__check-box">
+									<div class="one-radio__check-style">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="1" id="radio-21" checked>
+										<label for="radio-21"></label>
+									</div>
+									<p class="one-radio__label one-checkbox__label--nowrapp">$24k - $100k</p>
+								</div>
+								<div class="one-radio checkboxes-row__check-box">
+									<div class="one-radio__check-style">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="2" id="radio-22">
+										<label for="radio-22"></label>
+									</div>
+									<p class="one-radio__label one-checkbox__label--nowrapp">$100k - $500k</p>
+								</div>
+								<div class="one-radio checkboxes-row__check-box">
+									<div class="one-radio__check-style">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="3" id="radio-23">
+										<label for="radio-23"></label>
+									</div>
+									<p class="one-radio__label one-checkbox__label--nowrapp">$500k - $1M</p>
+								</div>
+								<div class="one-radio checkboxes-row__check-box">
+									<div class="one-radio__check-style">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="4" id="radio-24">
+										<label for="radio-24"></label>
+									</div>
+									<p class="one-radio__label one-checkbox__label--nowrapp">$1M+</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="registr-form__xs-padding">
+						<div class="one-checkbox registr-form__agreement">
+							<div class="one-checkbox__check-style">
+								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-agree">
+								<label for="checkbox-agree"></label>
+							</div>
+							<p class="one-checkbox__label">By checking this box, I agree and consent to transact business with Venture Box electronically, including signing and receiving documents, disclosures and other records electronically and as set forth in the Electronic Business Consent in our Terms of Use. </p>
+						</div>
+						<a href="/marketplace.html" class="registr-form__submit" >Send</a>
 					</div>
 				</div>
 			</form>

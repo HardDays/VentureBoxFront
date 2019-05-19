@@ -6,6 +6,12 @@
     background-color: #ffffff;
     padding: 30px 30px 21px;
 
+    @media (max-width: 767px) {
+        padding: 30px 16px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
     &__title {
         text-align: center;
         font-size: 26px;

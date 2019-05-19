@@ -5,13 +5,34 @@
    align-items: flex-start;
    flex-wrap: wrap;
 
+   @media (max-width: 767px) {
+       display: block;
+      
+   }
+
+   &--xs-max-width {
+    @media (max-width: 767px) {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+   }
+
    &--nowrapp {
        flex-wrap: nowrap;
+
+       @media (max-width: 767px) {
+           flex-wrap: wrap;
+       }
    }
 
    &__check-box {
        margin-bottom: 20px;
        margin-right: 12px;
+
+       @media (max-width: 767px) {
+           margin-bottom: 14px;
+           margin-right: 0;
+       }
 
        &:last-child {
            margin-right: 0;
