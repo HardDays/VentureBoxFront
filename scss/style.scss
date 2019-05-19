@@ -1,0 +1,41 @@
+@import "layout/var";
+@import "layout/app";
+//header
+@import "components/header/header";
+//footer
+@import "components/footer/footer";
+//app content
+@import "components/appcontent/appContent";
+//partners content
+@import "components/partners/partners";
+@import "components/partners/partner";
+//registr Form
+@import "components/registrform/registrForm";
+@import "components/registrform/checkboxesRow";
+@import "components/registrform/oneCheckbox";
+@import "components/registrform/inputGroupe";
+@import "components/registrform/formGroupe";
+@import "components/registrform/formRowInp";
+@import "components/registrform/oneRadio";
+//capital
+@import "components/capitalcredit/capitalcredit";
+@import "components/capitalcredit/capitalcredit-header";
+@import "components/capitalcredit/capitalcredit-menu";
+@import "components/capitalcredit/capitalcredit-content";
+@import "components/capitalcredit/capitalcredit-items";
+@import "components/capitalcredit/capitalcredit-sponsors";
+@import "components/capitalequity/capitalequity";
+@import "components/capitalequity/capitalequity-header";
+@import "components/capitalequity/capitalequity-menu";
+@import "components/capitalequity/capitalequity-content";
+@import "components/capitalequity/capitalequity-items";
+@import "components/capitalequity/capitalequity-sponsors";
+//about
+@import "components/about/about";
+@import "components/about/about-full";
+@import "components/about/about-companies";
+//marketplace
+@import "components/marketplace/marketplace";
+@import "components/marketplace/marketplace-content";
+@import "components/marketplace/marketplace-item";
+

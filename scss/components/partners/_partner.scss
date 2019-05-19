@@ -1,0 +1,43 @@
+@import "layout/var";
+
+.partner {
+    &__title {
+        font-size: 38px;
+        font-weight: $bold;
+        margin-bottom: 18px;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__text {
+        max-width: 830px;
+        padding-right: 30px;
+        font-size: 16px;
+    }
+    &__button {
+        display: block;
+        flex-shrink: 0;
+        color: #fff;
+        background-color: #231f20;
+        border-radius: 6px;
+        padding: 6px 30px;
+        font-size: 16px;
+        border: none;
+
+        @media (max-width: 991px) {
+            margin-top: 21px;
+        }
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+}

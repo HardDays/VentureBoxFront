@@ -1,0 +1,20 @@
+@import "layout/var";
+
+.checkboxes-row {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+   &--nowrapp {
+       flex-wrap: nowrap;
+   }
+
+   &__check-box {
+       margin-bottom: 20px;
+       margin-right: 12px;
+
+       &:last-child {
+           margin-right: 0;
+       }
+   }
+}

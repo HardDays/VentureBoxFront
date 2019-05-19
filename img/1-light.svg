@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="98" viewBox="0 0 98 98">
+    <defs>
+        <path id="a" d="M48 0c26.51 0 48 21.49 48 48S74.51 96 48 96 0 74.51 0 48 21.49 0 48 0zm0 1C22.043 1 1 22.043 1 48s21.043 47 47 47 47-21.043 47-47S73.957 1 48 1z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FFF" fill-opacity=".6" stroke="#FFF" transform="translate(1 1)" xlink:href="#a"/>
+        <text fill="#FFF" font-family="Roboto-Medium, Roboto" font-size="48" font-weight="400" transform="translate(32.5 21)">
+            <tspan x=".359" y="45">1</tspan>
+        </text>
+    </g>
+</svg>

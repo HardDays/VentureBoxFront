@@ -1,0 +1,14 @@
+@import "layout/var";
+
+.partners {
+    width: 100%;
+    max-width: 1139px;
+    margin: 0 auto;
+    padding: 62px 15px;
+    &__item {
+        margin-bottom: 42px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

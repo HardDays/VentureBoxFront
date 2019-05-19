@@ -1,0 +1,26 @@
+@import "layout/var";
+
+.capitalequity-sponsors {
+    display: flex;
+    max-width: 744px;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &__item {
+        max-width: 164px;
+        width: 164px;
+        height: 100px;
+        border-radius: 11px;
+        background-color: #f3f3f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 11px;
+        margin-bottom: 8px;
+    }
+    &__img{
+        // max-width: 100%;
+        padding: 6px 0px;
+        max-height: 100%;
+    }
+}

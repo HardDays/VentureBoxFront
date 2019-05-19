@@ -1,0 +1,42 @@
+@import "layout/var";
+
+.registr-form {
+   max-width: 740px;
+   margin: 0 auto;
+   padding: 60px 0;
+
+   &__title {
+       text-align: center;
+       font-weight: $bold;
+       font-size: 38px;
+       margin-bottom: 37px;
+   }
+
+   &__sub-title {
+       font-weight: $medium;
+       text-align: center;
+       font-size: 26px;
+       margin-bottom: 28px;
+   }
+
+   &__width {
+       max-width: 540px;
+       margin: 0 auto;
+   }
+
+   &__checkboxes-row {
+       margin-bottom: 20px;
+
+       &--none-margin {
+           margin-bottom: 0;
+       }
+   }
+
+   &__input-groupe {
+       margin-bottom: 19px;
+   }
+
+   &__form-groupe {
+       margin-bottom: 40px;
+   }
+}

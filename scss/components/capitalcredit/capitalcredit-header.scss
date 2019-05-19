@@ -1,0 +1,25 @@
+@import "layout/var";
+
+.capitalcredit-header {
+    position: relative;
+    &__title {
+        margin: 0 auto;
+        padding: 0 15px;
+        padding-top: 68px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: $bold;
+        color: #fff;
+        
+        @media (max-width: 500px) {
+            padding-top: 29px;
+            font-size: 24px;
+        }
+    }
+    &__menu {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}

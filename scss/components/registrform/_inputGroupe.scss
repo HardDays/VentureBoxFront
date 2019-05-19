@@ -1,0 +1,54 @@
+@import "layout/var";
+
+.input-groupe {
+   &__label {
+       display: block;
+       margin-bottom: 5px;
+       font-size: 14px;
+       font-weight: $medium;
+       line-height: 20px;
+
+       &--more-margin {
+           margin-bottom: 11px;
+       }
+   }
+
+   &__input {
+       display: block;
+       background: #fff;
+       padding: 12px 16px;
+       width: 100%;
+       border-radius: 6px;
+       border: 1px solid #b4b4b5;
+       line-height: 24px;
+       letter-spacing: 0.1px;
+       font-size: 16px;
+       color: #000;
+       &::-webkit-input-placeholder {
+           color: rgba(0,0,0,0.5);
+        }
+        &::-moz-placeholder {
+            color: rgba(0,0,0,0.5);
+        }
+        &:-moz-placeholder {
+            color: rgba(0,0,0,0.5);
+        }
+        &:-ms-input-placeholder {
+            color: rgba(0,0,0,0.5);
+        }
+
+        &--textarea {
+            height: 132px;
+            resize: none;
+        }
+   }
+
+   &__line {
+       height: 1px;
+       width: calc(100% + 60px);
+       position: relative;
+       left: -30px;
+       background: #f3f3f4;
+       margin-bottom: 30px;
+   }
+}
