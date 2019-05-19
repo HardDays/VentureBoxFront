@@ -306,6 +306,10 @@ p {
     margin-left: 8px;
 }
 
+.for-scroll-xs {
+    margin: 0 auto;
+}
+
 @media (max-width: 991px) {
     .for-scroll-xs {
         overflow: auto;
