@@ -1,0 +1,24 @@
+@import "layout/var";
+
+.get-req-modal {
+    &__title {
+        font-size: 16px;
+        text-align: center;
+        font-weight: $medium;
+    }
+
+    &__company-name {
+        font-size: 26px;
+        text-align: center;
+        font-weight: $medium;
+        margin-bottom: 19px;
+    }
+
+    &__input-groupe {
+        margin-bottom: 19px;
+    }
+
+    &__checkboxes-row {
+        flex-direction: column;
+    }
+}

@@ -316,6 +316,53 @@
 		  </div>
 		</div>
 	  </div>
+	  <div class="modal fade request-more" tabindex="-1" role="dialog" id="request-more">
+			<div class="modal-dialog request-more__dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body request-more__body">
+						<form class="get-req-modal">
+							<p class="get-req-modal__title">Request more info about</p>
+							<p class="get-req-modal__company-name">Archeads</p>
+							<div class="input-groupe get-req-modal__input-groupe">
+								<label class="input-groupe__label" for="input-1">Name</label>
+								<input class="input-groupe__input" type="text" id="input-1" >
+							</div>
+							<div class="input-groupe get-req-modal__input-groupe">
+								<label class="input-groupe__label" for="input-1">Email</label>
+								<input class="input-groupe__input" type="text" id="input-1" >
+							</div>
+							<div class="input-groupe get-req-modal__input-groupe">
+								<p class="input-groupe__label input-groupe__label--more-margin">Interested in</p>
+								<div class="checkboxes-row get-req-modal__checkboxes-row">
+									<div class="one-checkbox checkboxes-row__check-box">
+										<div class="one-checkbox__check-style">
+											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-5">
+											<label for="checkbox-5"></label>
+										</div>
+										<p class="one-checkbox__label one-checkbox__label--nowrapp">Investing</p>
+									</div>
+									<div class="one-checkbox checkboxes-row__check-box">
+										<div class="one-checkbox__check-style">
+											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-6">
+											<label for="checkbox-6"></label>
+										</div>
+										<p class="one-checkbox__label one-checkbox__label--nowrapp">Being on advisor</p>
+									</div>
+									<div class="one-checkbox checkboxes-row__check-box">
+										<div class="one-checkbox__check-style">
+											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-7">
+											<label for="checkbox-7"></label>
+										</div>
+										<p class="one-checkbox__label one-checkbox__label--nowrapp">Purchasing</p>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="registr-form__submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 		crossorigin="anonymous">
 	</script>
@@ -327,6 +374,12 @@
 	</script>
 	<script src="js/function.js"></script>
 	<script src="js/scripts.js"></script>
+	<script>
+		$('.marketplace-content__items .item .button').click(function(){
+			$('#request-more').modal('show');
+		});
+		
+	</script>
 </body>
 
 </html>

@@ -76,10 +76,15 @@
        background: #231f20;
        padding: 10px 0;
        font-size: 18px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+       
 
        &:hover {
-           color: #fff;
-           text-decoration: none;
+            background-color: #ffffff;
+            border-color: #231f20;
+            color: #231f20;
+            text-decoration: none;
        }
    }
 }
