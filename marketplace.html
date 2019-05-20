@@ -297,40 +297,40 @@
 							<p class="get-req-modal__title">Request more info about</p>
 							<p class="get-req-modal__company-name">Archeads</p>
 							<div class="input-groupe get-req-modal__input-groupe">
-								<label class="input-groupe__label" for="input-1">Name</label>
-								<input class="input-groupe__input" type="text" id="input-1" >
+								<label class="input-groupe__label" for="input-name">Name</label>
+								<input class="input-groupe__input" type="text" id="input-name" >
 							</div>
 							<div class="input-groupe get-req-modal__input-groupe">
-								<label class="input-groupe__label" for="input-1">Email</label>
-								<input class="input-groupe__input" type="text" id="input-1" >
+								<label class="input-groupe__label" for="input-email">Email</label>
+								<input class="input-groupe__input" type="text" id="input-email" >
 							</div>
 							<div class="input-groupe get-req-modal__input-groupe">
 								<p class="input-groupe__label input-groupe__label--more-margin">Interested in</p>
 								<div class="checkboxes-row get-req-modal__checkboxes-row">
 									<div class="one-checkbox checkboxes-row__check-box">
 										<div class="one-checkbox__check-style">
-											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-5">
-											<label for="checkbox-5"></label>
+											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-investing">
+											<label for="checkbox-investing"></label>
 										</div>
 										<p class="one-checkbox__label one-checkbox__label--nowrapp">Investing</p>
 									</div>
 									<div class="one-checkbox checkboxes-row__check-box">
 										<div class="one-checkbox__check-style">
-											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-6">
-											<label for="checkbox-6"></label>
+											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-advisor">
+											<label for="checkbox-advisor"></label>
 										</div>
 										<p class="one-checkbox__label one-checkbox__label--nowrapp">Being on advisor</p>
 									</div>
 									<div class="one-checkbox checkboxes-row__check-box">
 										<div class="one-checkbox__check-style">
-											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-7">
-											<label for="checkbox-7"></label>
+											<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-purchasing">
+											<label for="checkbox-purchasing"></label>
 										</div>
 										<p class="one-checkbox__label one-checkbox__label--nowrapp">Purchasing</p>
 									</div>
 								</div>
 							</div>
-							<button type="submit" class="registr-form__submit">Send</button>
+							<button type="button" class="registr-form__submit">Send</button>
 						</form>
 					</div>
 				</div>
@@ -356,8 +356,36 @@
 			$('.marketplace__navigation').toggleClass('marketplace__navigation--open')
 		});
 
-		
-		
+		function sendRequestInfo() {
+
+			var data = {
+				email: $("#input-email").val(),
+				name: $("#input-name").val(),
+				interested_in_investing: $("#checkbox-investing").is(":checked"),
+				interested_in_advisor: $("#checkbox-advisor").is(":checked"),
+				interested_in_purchasing: $("#checkbox-purchasing").is(":checked")
+			};
+			$.ajax("https://venture-box-back.herokuapp.com/requests.json",{
+				data : JSON.stringify(data),
+				contentType : 'application/json',
+				type : 'POST',
+				success: function(data,status){
+					if (status=='success') {
+						if(data) {
+							$('#request-more').modal('hide');
+						}
+					}
+				}
+			}).fail(function(error) {
+				console.log(`Fail`);
+			});
+		}
+
+		$('.registr-form__submit').click(function (e) {
+			e.preventDefault;
+			sendRequestInfo();
+		});
+
 	</script>
 </body>
 

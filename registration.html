@@ -124,24 +124,28 @@
 						<div class="form-row-inp">
 							<div class="form-row-inp__side">
 								<div class="input-groupe registr-form__input-groupe">
-									<label class="input-groupe__label" for="input-4">First name</label>
-									<input class="input-groupe__input" type="text" id="input-4">
+									<label class="input-groupe__label" for="input-firstname">First name</label>
+									<input class="input-groupe__input" type="text" id="input-firstname">
 								</div>
 							</div>
 							<div class="form-row-inp__side">
 								<div class="input-groupe registr-form__input-groupe">
-									<label class="input-groupe__label" for="input-5">Last name</label>
-									<input class="input-groupe__input" type="text" id="input-5">
+									<label class="input-groupe__label" for="input-lastname">Last name</label>
+									<input class="input-groupe__input" type="text" id="input-lastname">
 								</div>
 							</div>
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-6">Email</label>
-							<input class="input-groupe__input" type="text" id="input-6">
+							<label class="input-groupe__label" for="input-email">Email</label>
+							<input class="input-groupe__input" type="text" id="input-email">
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-7">Phone number</label>
-							<input class="input-groupe__input" type="text" id="input-7">
+							<label class="input-groupe__label" for="input-phone">Phone number</label>
+							<input class="input-groupe__input" type="text" id="input-phone">
+						</div>
+						<div class="input-groupe registr-form__input-groupe">
+							<label class="input-groupe__label" for="input-password">Password</label>
+							<input class="input-groupe__input" type="password" id="input-password">
 						</div>
 					</div>
 					<div class="form-groupe form-groupe--margin-top registr-form__form-groupe">
@@ -314,7 +318,7 @@
 							</div>
 							<p class="one-checkbox__label">By checking this box, I agree and consent to transact business with Venture Box electronically, including signing and receiving documents, disclosures and other records electronically and as set forth in the Electronic Business Consent in our Terms of Use. </p>
 						</div>
-						<a href="./marketplace.html" class="registr-form__submit" >Send</a>
+						<button class="registr-form__submit" >Send</button>
 					</div>
 				</div>
 			</form>
@@ -406,6 +410,41 @@
 	</script>
 	<script src="js/function.js"></script>
 	<script src="js/scripts.js"></script>
+
+	<script>
+		function sendRequestInfo() {
+
+			var dataUser = {
+				name: $("#input-firstname").val(),
+				surname: $("#input-lastname").val(),
+				email: $("#input-email").val(),
+				phone: $("#input-phone").val(),
+				password: $("#input-password").val(),
+				password_confirmation: $("#input-password").val(),
+				role: "startup"
+			};
+			$.ajax("https://venture-box-back.herokuapp.com/users.json",{
+				data : JSON.stringify(dataUser),
+				contentType : 'application/json',
+				type : 'POST',
+				success: function(data,status){
+					if (status=='success') {
+						if(data) {
+							console.log(data);
+						}
+					}
+				}
+			}).fail(function(error) {
+				console.log(`Fail`);
+			});
+		}
+
+		$('#registr-form__submit').click(function (e) {
+			e.preventDefault;
+			sendRequestInfo();
+		});
+	</script>
+
 </body>
 
 </html>

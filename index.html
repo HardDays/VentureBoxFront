@@ -122,7 +122,7 @@
 							</label>
 							<input type="email" class="form-control" id="exampleInputEmail1" required>
 						</div>
-						<button type="submit" id="btn_request" class="btn btn-primary-inv w-100">
+						<button type="button" id="btn_request" class="btn btn-primary-inv w-100">
 							Request info
 						</button>
 					</form>
@@ -352,6 +352,36 @@
 	</script>
 	<script src="js/function.js"></script>
 	<script src="js/scripts.js"></script>
+
+	<script>
+		function sendRequestInfo() {
+
+			var data = {
+				name: $("#exampleInputCompany").val(),
+				email: $("#exampleInputEmail1").val()
+			};
+			$.ajax("https://venture-box-back.herokuapp.com/requests.json",{
+				data : JSON.stringify(data),
+				contentType : 'application/json',
+				type : 'POST',
+				success: function(data,status){
+					if (status=='success') {
+						if(data) {
+							console.log(data);
+						}
+					}
+				}
+			}).fail(function(error) {
+				console.log(`Fail`);
+			});
+		}
+
+		$('#btn_request').click(function (e) {
+			e.preventDefault;
+			sendRequestInfo();
+		});
+
+	</script>
 </body>
 
 </html>
