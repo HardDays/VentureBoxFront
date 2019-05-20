@@ -2,8 +2,43 @@
 
 .marketplace {
   width: 100%;
-  padding: 60px !important;
+  padding: 60px 165px;
+  display: flex;
   
+  @media (max-width: 991px) {
+      padding: 60px 20px;
+    }
+
+  &__navigation{
+    width: 200px;
+    @media (max-width: 991px) {
+      display: none;
+      width: 0;
+    }
+  }
+
+  &__mob-nav {
+    display: none;
+    @media (max-width: 991px) {
+      display: block;
+    }
+  }
+  
+  &__line {
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    margin: 0 50px;
+    opacity: 0.1;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  &__list{
+    padding: 0;
+    margin: 0;
+  }
+
   &__content{
       width: 100%;
   }
