@@ -21,7 +21,7 @@
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 2px 0 rgba(0, 0, 0, 0.1);
         background-color: #f3f3f4;
         padding: 20px;
-        margin: 0 14px 12px;
+        margin: 0 14px 16px;
 
         .title {
             padding: 4px 0;
@@ -61,10 +61,25 @@
         }
         .looking-items {
             display: flex;
-             margin-bottom: 14px;
+            margin-bottom: 14px;
+            
             .looking-item {
-
+                margin-right: 28px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &-img{
+                    width: 44px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                &-text{
+                    text-align: center;
+                    font-size: 12px;
+                    color: #000000;
+                }
             }
+            
         }
         
 
@@ -75,11 +90,15 @@
             padding: 8px 16px;
             border: solid 1px #231f20;
             border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
         }
 
         .read-more {
             text-align: center;
             padding-top: 8px;
+            font-weight: 600;
+            font-size: 16px;
         }
       }
   }
