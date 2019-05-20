@@ -1,0 +1,75 @@
+@import "layout/var";
+
+.testimonial-slider {
+   &__slide {
+        height: 100%;
+        outline: none;
+        position: relative;
+         &::before {
+               content: "";
+               display: block;
+               position: absolute;
+               right: calc(100% - 1px);
+               
+               width: 1px;
+               height: 100%;
+               background: #ebebeb;
+
+               @media (max-width: 767px) {
+                    display: none;
+               }
+          }
+
+          &.slick-active {
+               &::before {
+                    right: calc(100% + 2px);
+               }
+          }
+
+          &:first-child{
+               &::before {
+                    display: none;
+               }
+          }
+       
+   }
+
+   .slick-arrow{
+     display: block;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 32px;
+     height: 32px;
+     border: none;
+     font-size: 0;
+     outline: none;
+     background-color: transparent;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     z-index: 500;
+
+     &.slick-disabled {
+          cursor: auto;
+          opacity: 0.5;
+     }
+
+     &.slick-prev  {
+          left: 0;
+          background-image: url(../img/left.svg);
+
+          @media (max-width: 767px) {
+               left: -32px;
+          }
+     }
+
+     &.slick-next {
+          right: 0;
+          background-image: url(../img/right.svg);
+          @media (max-width: 767px) {
+               right: -32px;
+          }
+     }
+   }
+}

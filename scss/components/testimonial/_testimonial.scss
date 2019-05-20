@@ -1,0 +1,27 @@
+@import "layout/var";
+
+.testimonial {
+   padding: 80px 0 40px;
+
+   @media (max-width: 767px) {
+        padding: 40px 0;
+   }
+
+   &__wrapp {
+        max-width: 1339px;
+        padding: 0 32px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 991px) {
+             max-width: 768px;
+        }
+   }
+
+   &__title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: $bold;
+        font-size: 38px;
+   }
+}

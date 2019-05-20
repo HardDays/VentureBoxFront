@@ -1,0 +1,107 @@
+@import "layout/var";
+
+.companies-product {
+  background: #231f20;
+
+    &__wrapp {
+        max-width: 1124px;
+        padding: 67px 15px 60px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    &__left {
+        width: 25%;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            padding-right: 0;
+        }
+    }
+
+    &__count {
+        font-size: 80px;
+        font-weight: $semiBold;
+        color: #fff;
+    }
+
+    &__descr {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &__title-link {
+        margin-top: auto;
+        color: #fff;
+        margin-bottom: 4px;
+        font-size: 16px;
+        font-weight: $medium;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: $medium;
+        text-decoration: underline;
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__right {
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__item {
+        margin-left: 30px;
+
+        @media (max-width: 991px) {
+            margin: 0 15px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0 auto 20px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+            @media (max-width: 767px) {
+                margin-left: auto;
+            }
+        }
+
+        &:last-child {
+            @media (max-width: 991px) {
+                margin-right: 0;
+            }
+
+            @media (max-width: 767px) {
+                margin-right: auto;
+            }
+        }
+    }
+}

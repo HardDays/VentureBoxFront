@@ -28,16 +28,20 @@
         border-radius: 6px;
         padding: 6px 30px;
         font-size: 16px;
-        border: none;
-
+        transition: 0.3s;
+        border: 1px solid transparent;
         @media (max-width: 991px) {
             margin-top: 21px;
         }
 
         &:hover {
-            color: #fff;
             text-decoration: none;
+            background-color: #fff;
+            border-color: #231f20;
+            color: #231f20;
         }
+
+        
     }
 
 }

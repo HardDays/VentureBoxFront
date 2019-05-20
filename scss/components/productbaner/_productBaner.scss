@@ -1,0 +1,34 @@
+@import "layout/var";
+
+.product-baner {
+   background: #1b1b1b;
+
+   &__wrapp {
+       max-width: 1200px;
+       margin: 0 auto;
+       padding: 100px 16px 40px;
+
+       @media (max-width: 767px) {
+           padding: 40px 16px;
+       }
+   }
+
+   &__title {
+       text-align: center;
+       font-weight: $bold;
+       font-size: 38px;
+       color: #fff;
+       margin-bottom: 40px;
+
+       @media (max-width: 767px) {
+           font-size: 28px;
+       }
+   }
+
+   &__img {
+       display: block;
+       max-width: 100%;
+       height: auto;
+       margin: 0 auto;
+   }
+}

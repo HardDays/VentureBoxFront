@@ -25,10 +25,14 @@
         padding: 12px 42px;
         font-size: 16px;
         border: none;
-
-        &:hover {
-            color: #fff;
-            text-decoration: none;
-        }
+        transition: 0.3s;
+        border: 1px solid transparent;
+ 
+         &:hover {
+             text-decoration: none;
+             background-color: #fff;
+             border-color: #231f20;
+             color: #231f20;
+         }
     }
 }

@@ -55,6 +55,11 @@
        left: -30px;
        background: #f3f3f4;
        margin-bottom: 30px;
+    
+       @media (max-width: 767px) {
+           width: calc(100% + 32px);
+           left: -16px;
+       }
    }
 
    &__tabs {
@@ -88,6 +93,7 @@
    &__flex-file {
        display: flex;
     position: relative;
+    overflow: hidden;
 
    }
 

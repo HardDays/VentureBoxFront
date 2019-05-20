@@ -1,0 +1,31 @@
+@import "layout/var";
+
+.tariffs {
+   padding: 50px 0 48px;
+
+   &__wrapp {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-around;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        width: 300px;
+
+        @media (max-width: 991px) {
+            width: 226px;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
