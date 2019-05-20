@@ -1,0 +1,25 @@
+@import "layout/var";
+
+.close-circle {
+    
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+
+    @media (max-width: 991px) {
+        display: flex;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 15px;
+    }
+}

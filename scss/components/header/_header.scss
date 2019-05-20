@@ -21,6 +21,7 @@
         top: 100%;
         left: 0;
         width: 100%;
+        
     }
 }
 
@@ -36,7 +37,7 @@
 
 .hidden-on-sm {
     @media (max-width: 991px) {
-        display: nonel
+        display: none;
     }
 }
 
@@ -93,10 +94,15 @@
     @media (max-width: 991px) {
         display: block;
         flex-shrink: 0;
+        
     }
 
     &__link {
         color: #fff;
         font-size: 16px;
+        border: none;
+        padding: 0;
+        background: transparent;
+        outline: none;
     }
 }

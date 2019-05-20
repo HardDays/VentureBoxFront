@@ -30,7 +30,7 @@
 					
 					<a class="navbar-brand logo mr-lg-5 m-sm-auto" href="index.html"><img src="img/v-box-logo.png" /></a>
 					<div class="abs-login">
-						<a href="registration.html" class="abs-login__link">Log in</a>
+						<button class="abs-login__link"><img src="img/filter-header.svg" class="abs-login__filter" alt=""></button>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="navbar-nav">
@@ -46,7 +46,14 @@
 							<li class="nav-item">
 								<a class="nav-link" href="marketplace.html">Marketplace</a>
 							</li>
+							<li class="nav-item">
+									<div class="close-circle " data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1">
+										<img src="img/close-white.svg" class="close-circle__img" alt="">
+									</div>
+							</li>
 						</ul>
+						
 						<ul class="navbar-nav ml-md-auto hidden-on-sm">
 							<li class="nav-item">
 								<a role="button" href="#getstarted" class="btn btn-primary-1 btn-md">
@@ -71,171 +78,137 @@
 							<p class="marketplace-list__parent-title">All categories</p>
 						</li>
 						<li class="marketplace-list__parent">
-							<p class="marketplace-list__parent-title">Tech & Innovation <img src="./img/arrow-activ.svg" class="marketplace-list__parent-title-opener marketplace-list__parent-title-opener--open"></p>
+							<p class="marketplace-list__parent-title">Tech & Innovation <span class="marketplace-list__parent-title-opener marketplace-list__parent-title-opener--open"></span></p>
 							<ul class="marketplace-list__child">
 								<li class="marketplace-list__child-title">Audio</li>
 								<li class="marketplace-list__child-title marketplace-list__child-title--selected">Camera Gear</li>
 								<li class="marketplace-list__child-title">Education</li>
 							</ul>
 						</li>
-						<li class="marketplace-list__parent"><p class="marketplace-list__parent-title">Consumable Goods <img src="./img/arrow-activ.svg" class="marketplace-list__parent-title-opener"></p></li>
-						<li class="marketplace-list__parent"><p class="marketplace-list__parent-title">Food Tech <img src="./img/arrow-activ.svg" class="marketplace-list__parent-title-opener"></p></li>
+						<li class="marketplace-list__parent">
+							<p class="marketplace-list__parent-title">Consumable Goods <span class="marketplace-list__parent-title-opener"></span></p>
+						</li>
+						<li class="marketplace-list__parent">
+							<p class="marketplace-list__parent-title">Food Tech <span class="marketplace-list__parent-title-opener"></span></p>
+						</li>
 					</ul>
+					<div class="close-circle close-circle--close-filter">
+						<img src="img/close-white.svg" class="close-circle__img" alt="">
+					</div>
 				</div>
-				<div class="marketplace__line"></div>
+				
 				<div class="marketplace-content marketplace__content">
 					<h4 class="marketplace-content__title">Marketplace</h4>
 					<div class="marketplace-content__items">
-						<div class="item">
-							<h3 class="title">Archeads</h3>
-							<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
-							<ul class="tags">
-								<li class="tag">Serial enterpreneur</li>
-								<li class="tag">New market</li>
-							</ul>
-							<p class="looking-title">Looking for</p>
-							<div class="looking-items">
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
-									<p class="looking-item-text">Advisor</p>
+						<div class="marketplace-content__item">
+							<div class="item">
+								<h3 class="title">Archeads</h3>
+								<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
+								<ul class="tags">
+									<li class="tag">Serial enterpreneur</li>
+									<li class="tag">New market</li>
+								</ul>
+								<p class="looking-title">Looking for</p>
+								<div class="looking-items">
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
+										<p class="looking-item-text">Advisor</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
+										<p class="looking-item-text">Buyer</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/finance@2x.png" alt="">
+										<p class="looking-item-text">Finance</p>
+									</div>
 								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
-									<p class="looking-item-text">Buyer</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/finance@2x.png" alt="">
-									<p class="looking-item-text">Finance</p>
-								</div>
+								<button class="button">Request Info</button>
+								<a href="#" class="read-more">Read more</a>
 							</div>
-							<button class="button">Request Info</button>
-							<p class="read-more">Read more</p>
 						</div>
-						<div class="item">
-							<h3 class="title">Archeads</h3>
-							<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
-							<ul class="tags">
-								<li class="tag">Serial enterpreneur</li>
-								<li class="tag">New market</li>
-							</ul>
-							<p class="looking-title">Looking for</p>
-							<div class="looking-items">
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
-									<p class="looking-item-text">Advisor</p>
+						<div class="marketplace-content__item">
+							<div class="item">
+								<h3 class="title">Archeads</h3>
+								<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
+								<ul class="tags">
+									<li class="tag">Serial enterpreneur</li>
+									<li class="tag">New market</li>
+								</ul>
+								<p class="looking-title">Looking for</p>
+								<div class="looking-items">
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
+										<p class="looking-item-text">Advisor</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
+										<p class="looking-item-text">Buyer</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/finance@2x.png" alt="">
+										<p class="looking-item-text">Finance</p>
+									</div>
 								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
-									<p class="looking-item-text">Buyer</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/finance@2x.png" alt="">
-									<p class="looking-item-text">Finance</p>
-								</div>
+								<button class="button">Request Info</button>
+								<a href="#" class="read-more">Read more</a>
 							</div>
-							<button class="button">Request Info</button>
-							<p class="read-more">Read more</p>
 						</div>
-						<div class="item">
-							<h3 class="title">Archeads</h3>
-							<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
-							<ul class="tags">
-								<li class="tag">Serial enterpreneur</li>
-								<li class="tag">New market</li>
-							</ul>
-							<p class="looking-title">Looking for</p>
-							<div class="looking-items">
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
-									<p class="looking-item-text">Advisor</p>
+						<div class="marketplace-content__item">
+							<div class="item">
+								<h3 class="title">Archeads</h3>
+								<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
+								<ul class="tags">
+									<li class="tag">Serial enterpreneur</li>
+									<li class="tag">New market</li>
+								</ul>
+								<p class="looking-title">Looking for</p>
+								<div class="looking-items">
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
+										<p class="looking-item-text">Advisor</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
+										<p class="looking-item-text">Buyer</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/finance@2x.png" alt="">
+										<p class="looking-item-text">Finance</p>
+									</div>
 								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
-									<p class="looking-item-text">Buyer</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/finance@2x.png" alt="">
-									<p class="looking-item-text">Finance</p>
-								</div>
+								<button class="button">Request Info</button>
+								<a href="#" class="read-more">Read more</a>
 							</div>
-							<button class="button">Request Info</button>
-							<p class="read-more">Read more</p>
 						</div>
-						<div class="item">
-							<h3 class="title">Archeads</h3>
-							<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
-							<ul class="tags">
-								<li class="tag">Serial enterpreneur</li>
-								<li class="tag">New market</li>
-							</ul>
-							<p class="looking-title">Looking for</p>
-							<div class="looking-items">
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
-									<p class="looking-item-text">Advisor</p>
+						<div class="marketplace-content__item">
+							<div class="item">
+								<h3 class="title">Archeads</h3>
+								<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
+								<ul class="tags">
+									<li class="tag">Serial enterpreneur</li>
+									<li class="tag">New market</li>
+								</ul>
+								<p class="looking-title">Looking for</p>
+								<div class="looking-items">
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
+										<p class="looking-item-text">Advisor</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
+										<p class="looking-item-text">Buyer</p>
+									</div>
+									<div class="looking-item">
+										<img class="looking-item-img" src="./img/finance@2x.png" alt="">
+										<p class="looking-item-text">Finance</p>
+									</div>
 								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
-									<p class="looking-item-text">Buyer</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/finance@2x.png" alt="">
-									<p class="looking-item-text">Finance</p>
-								</div>
+								<button class="button">Request Info</button>
+								<a href="#" class="read-more">Read more</a>
 							</div>
-							<button class="button">Request Info</button>
-							<p class="read-more">Read more</p>
 						</div>
-						<div class="item">
-							<h3 class="title">Archeads</h3>
-							<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
-							<ul class="tags">
-								<li class="tag">Serial enterpreneur</li>
-								<li class="tag">New market</li>
-							</ul>
-							<p class="looking-title">Looking for</p>
-							<div class="looking-items">
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
-									<p class="looking-item-text">Advisor</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
-									<p class="looking-item-text">Buyer</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/finance@2x.png" alt="">
-									<p class="looking-item-text">Finance</p>
-								</div>
-							</div>
-							<button class="button">Request Info</button>
-							<p class="read-more">Read more</p>
-						</div>
-						<div class="item">
-							<h3 class="title">Archeads</h3>
-							<p class="desc">AI system to analyze commercial real estate and greate smart office layouts.</p>
-							<ul class="tags">
-								<li class="tag">Serial enterpreneur</li>
-								<li class="tag">New market</li>
-							</ul>
-							<p class="looking-title">Looking for</p>
-							<div class="looking-items">
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/advisor@2x.png" alt="">
-									<p class="looking-item-text">Advisor</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/buyer@2x.png" alt="">
-									<p class="looking-item-text">Buyer</p>
-								</div>
-								<div class="looking-item">
-									<img class="looking-item-img" src="./img/finance@2x.png" alt="">
-									<p class="looking-item-text">Finance</p>
-								</div>
-							</div>
-							<button class="button">Request Info</button>
-							<p class="read-more">Read more</p>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -378,6 +351,12 @@
 		$('.marketplace-content__items .item .button').click(function(){
 			$('#request-more').modal('show');
 		});
+
+		$('.abs-login__filter, .close-circle--close-filter').click(function(){
+			$('.marketplace__navigation').toggleClass('marketplace__navigation--open')
+		});
+
+		
 		
 	</script>
 </body>
