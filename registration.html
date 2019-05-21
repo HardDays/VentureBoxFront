@@ -76,29 +76,29 @@
 					<div class="checkboxes-row checkboxes-row--xs-max-width checkboxes-row--nowrapp registr-form__checkboxes-row">
 						<div class="one-checkbox checkboxes-row__check-box">
 							<div class="one-checkbox__check-style">
-								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-1">
-								<label for="checkbox-1"></label>
+								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_interested_in_access">
+								<label for="checkbox-is_interested_in_access"></label>
 							</div>
 							<p class="one-checkbox__label one-checkbox__label--nowrapp">Platform access</p>
 						</div>
 						<div class="one-checkbox checkboxes-row__check-box">
 							<div class="one-checkbox__check-style">
-								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-2">
-								<label for="checkbox-2"></label>
+								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_interested_in_insights">
+								<label for="checkbox-is_interested_in_insights"></label>
 							</div>
 							<p class="one-checkbox__label one-checkbox__label--nowrapp">Insights</p>
 						</div>
 						<div class="one-checkbox checkboxes-row__check-box">
 							<div class="one-checkbox__check-style">
-								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-3">
-								<label for="checkbox-3"></label>
+								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_interested_in_capital">
+								<label for="checkbox-is_interested_in_capital"></label>
 							</div>
 							<p class="one-checkbox__label one-checkbox__label--nowrapp">Capital</p>
 						</div>
 						<div class="one-checkbox checkboxes-row__check-box">
 							<div class="one-checkbox__check-style">
-								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-4">
-								<label for="checkbox-4"></label>
+								<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_interested_in_marketplace">
+								<label for="checkbox-is_interested_in_marketplace"></label>
 							</div>
 							<p class="one-checkbox__label one-checkbox__label--nowrapp">Get listed on marketplace</p>
 						</div>
@@ -120,7 +120,6 @@
 						<div class="input-groupe registr-form__input-groupe">
 							<label class="input-groupe__label" for="input-3">Your role</label>
 							<select class="input-groupe__input" id="input-3">
-								<option>CEO</option>
 								<option>CEO</option>
 							</select>
 						</div>
@@ -155,50 +154,51 @@
 						<p class="form-groupe__title">Company info</p>
 						<div class="input-groupe registr-form__input-groupe">
 							<label class="input-groupe__label" ></label>
-							<select class="input-groupe__input">
-								<option>Financial Markets</option>
-								<option>Financial Markets</option>
+							<select class="input-groupe__input" id="input-markets">
+								<option value="financial_markets">Financial Markets</option>
 							</select>
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-8">Founded in</label>
-							<select class="input-groupe__input" type="text" id="input-8">
+							<label class="input-groupe__label" for="input-founded_in">Founded in</label>
+							<select class="input-groupe__input" type="text" id="input-founded_in">
 								<option>2016</option>
 								<option>2017</option>
+								<option>2018</option>
+								<option>2019</option>
 							</select>
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-9">Current stage</label>
-							<select class="input-groupe__input" type="text" id="input-9">
-								<option>Round A</option>
-								<option>Round B</option>
+							<label class="input-groupe__label" for="input-current_stage">Current stage</label>
+							<select class="input-groupe__input" type="text" id="input-current_stage">
+								<option value="round_a">Round A</option>
+								<option value="round_b">Round B</option>
 							</select>
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-10">Evaluation</label>
-							<input class="input-groupe__input" type="text" id="input-10">
+							<label class="input-groupe__label" for="input-evaluation">Evaluation</label>
+							<input class="input-groupe__input" type="text" id="input-evaluation">
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
 							<p class="input-groupe__label input-groupe__label--more-margin">Source of revenue</p>
 							<div class="checkboxes-row checkboxes-row--nowrapp registr-form__checkboxes-row">
 								<div class="one-checkbox checkboxes-row__check-box">
 									<div class="one-checkbox__check-style">
-										<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-5">
-										<label for="checkbox-5"></label>
+										<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_revenue_consumer">
+										<label for="checkbox-is_revenue_consumer"></label>
 									</div>
 									<p class="one-checkbox__label one-checkbox__label--nowrapp">Direct to consumer</p>
 								</div>
 								<div class="one-checkbox checkboxes-row__check-box">
 									<div class="one-checkbox__check-style">
-										<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-6">
-										<label for="checkbox-6"></label>
+										<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_revenue_wholesale">
+										<label for="checkbox-is_revenue_wholesale"></label>
 									</div>
 									<p class="one-checkbox__label one-checkbox__label--nowrapp">Wholesale</p>
 								</div>
 								<div class="one-checkbox checkboxes-row__check-box">
 									<div class="one-checkbox__check-style">
-										<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-7">
-										<label for="checkbox-7"></label>
+										<input type="checkbox" class="one-checkbox__checkbox" name="" id="checkbox-is_revenue_other">
+										<label for="checkbox-is_revenue_other"></label>
 									</div>
 									<p class="one-checkbox__label one-checkbox__label--nowrapp">Other</p>
 								</div>
@@ -209,13 +209,13 @@
 						<div class="input-groupe registr-form__input-groupe">
 							<p class="input-groupe__label">Investor deck</p>
 							<div class="input-groupe__tabs">
-								<label class="input-groupe__tabs-label" for="input-link">Add link</label>
-								<label class="input-groupe__tabs-label input-groupe__tabs-label--white" for="input-file">Upload file</label>
+								<label class="input-groupe__tabs-label" for="input-investor_deck_link">Add link</label>
+								<label class="input-groupe__tabs-label input-groupe__tabs-label--white" for="input-investor_deck_file">Upload file</label>
 							</div>
 							<div class="input-groupe__flex-file">
-								<input class="input-groupe__input input-groupe__input--none-radius-right" type="text" id="input-link">
-								<input class="input-groupe__input-file" type="file" id="input-file">
-								<label class="input-groupe__button-label" for="input-file"></label>
+								<input class="input-groupe__input input-groupe__input--none-radius-right" type="text" id="input-investor_deck_link">
+								<input class="input-groupe__input-file" type="file" id="input-investor_deck_file">
+								<label class="input-groupe__button-label" for="input-investor_deck_file"></label>
 							</div>
 						</div>	
 						<div class="input-groupe registr-form__input-groupe">
@@ -223,28 +223,28 @@
 							<div class="checkboxes-row checkboxes-row--nowrapp registr-form__checkboxes-row registr-form__checkboxes-row--none-margin">
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="1" id="radio-1" checked>
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="zero" id="radio-1" checked>
 										<label for="radio-1"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$n/a</p>
 								</div>
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="2" id="radio-2">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="two_hundred" id="radio-2">
 										<label for="radio-2"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$0k - $250k</p>
 								</div>
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="3" id="radio-3">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="million" id="radio-3">
 										<label for="radio-3"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$250k - $1M</p>
 								</div>
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="4" id="radio-4">
+										<input type="radio" class="one-radio__checkbox" name="revenue" value="universe" id="radio-4">
 										<label for="radio-4"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">>$1M</p>
@@ -253,23 +253,23 @@
 							</div>
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-9">Current stage</label>
-							<textarea class="input-groupe__input input-groupe__input--textarea" id="input-9"></textarea>
+							<label class="input-groupe__label" for="input-current_stage_description">Current stage</label>
+							<textarea class="input-groupe__input input-groupe__input--textarea" id="input-current_stage_description"></textarea>
 						</div>
 							
 					</div>
 					<div class="form-groupe registr-form__form-groupe">
 						<p class="form-groupe__title">Markets</p>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-30">Primary market</label>
-							<select class="input-groupe__input" id="input-30">
+							<label class="input-groupe__label" for="input-primary_market">Primary market</label>
+							<select class="input-groupe__input" id="input-primary_market">
 								<option>Slovenia</option>
 								<option>USA</option>
 							</select>
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-30">Target market</label>
-							<select class="input-groupe__input" id="input-30">
+							<label class="input-groupe__label" for="input-target_market">Target market</label>
+							<select class="input-groupe__input" id="input-target_market">
 								<option>USA</option>
 								<option>Slovenia</option>
 							</select>
@@ -283,28 +283,28 @@
 							<div class="checkboxes-row checkboxes-row--nowrapp registr-form__checkboxes-row registr-form__checkboxes-row--none-margin">
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="1" id="radio-21" checked>
+										<input type="radio" class="one-radio__checkbox" name="targetrevenue" value="hundred" id="radio-21" checked>
 										<label for="radio-21"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$24k - $100k</p>
 								</div>
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="2" id="radio-22">
+										<input type="radio" class="one-radio__checkbox" name="targetrevenue" value="five_hundred" id="radio-22">
 										<label for="radio-22"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$100k - $500k</p>
 								</div>
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="3" id="radio-23">
+										<input type="radio" class="one-radio__checkbox" name="targetrevenue" value="one_million" id="radio-23">
 										<label for="radio-23"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$500k - $1M</p>
 								</div>
 								<div class="one-radio checkboxes-row__check-box">
 									<div class="one-radio__check-style">
-										<input type="radio" class="one-radio__checkbox" name="revenue" value="4" id="radio-24">
+										<input type="radio" class="one-radio__checkbox" name="targetrevenue" value="more" id="radio-24">
 										<label for="radio-24"></label>
 									</div>
 									<p class="one-radio__label one-checkbox__label--nowrapp">$1M+</p>
@@ -416,22 +416,6 @@
 
 	<script>
 
-		// var TOKEN = '';
-		// if (localStorage.getItem('token')) {
-        // 	TOKEN = localStorage.getItem('token');
-		// }
-		
-		// setUserOnHeader();
-
-		// function setUserOnHeader() {
-		// 	if (TOKEN) {
-		// 		$('#login-block').css({'display':'none'});
-		// 		$('#username-block').css({'display':'block'});
-		// 		var user = JSON.parse(localStorage.getItem('user'));
-		// 		$('#username-text').text(user.name + " " + user.surname);
-		// 	}
-		// }
-
 		function sendRequestUser() {
 
 			var dataUser = {
@@ -441,10 +425,10 @@
 				phone: $("#input-phone").val(),
 				password: $("#input-password").val(),
 				password_confirmation: $("#input-password").val(),
-				role: "startup"
+				role: "ceo"
 			};
 
-			$.ajax("https://venture-box-back.herokuapp.com/users.json",{
+			$.ajax("https://venture-box-land.herokuapp.com/users.json",{
 				data : JSON.stringify(dataUser),
 				contentType : 'application/json',
 				type : 'POST',
@@ -469,9 +453,28 @@
 			var dataCompany = {
 				name: $("#input-name").val(),
 				website: $("#input-website").val(),
-				description: ""
+				description: "",
+				is_interested_in_access: $("#checkbox-is_interested_in_access").is(":checked"),
+				is_interested_in_insights: $("#checkbox-is_interested_in_insights").is(":checked"),
+				is_interested_in_capital: $("#checkbox-is_interested_in_capital").is(":checked"),
+				is_interested_in_marketplace: $("#checkbox-is_interested_in_marketplace").is(":checked"),
+				markets: $("#input-markets").val(),
+				founded_in: $("#input-founded_in").val(),
+				current_stage: $("#input-current_stage").val(),
+				evaluation: $("#input-evaluation").val(),
+				is_revenue_consumer: $("#checkbox-is_revenue_consumer").is(":checked"),
+				is_revenue_wholesale: $("#checkbox-is_revenue_wholesale").is(":checked"),
+				is_revenue_other: $("#checkbox-is_revenue_other").is(":checked"),
+				investor_deck_link: $("#input-investor_deck_link").val(),
+				investor_deck_file: $("#input-investor_deck_file").val(),
+				current_revenue: $('input[name=revenue]:checked').val(),
+				current_stage_description: $("#input-current_stage_description").val(),
+				primary_market: $("#input-primary_market").val(),
+				target_market: $("#input-target_market").val(),
+				target_revenue: $('input[name=targetrevenue]:checked').val(),
 			};
-			$.ajax("https://venture-box-back.herokuapp.com/users/"+user_id+"/companies.json",{
+			console.log(dataCompany);
+			$.ajax("https://venture-box-land.herokuapp.com/users/"+user_id+"/companies.json",{
 				data : JSON.stringify(dataCompany),
 				contentType : 'application/json',
 				type : 'POST',
