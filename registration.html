@@ -455,6 +455,7 @@
 							localStorage.setItem('user', JSON.stringify(data));
 							TOKEN = data['token'];
 							sendRequestCompany(data['id']);
+							setUserOnHeader();
 						}
 					}
 				}
