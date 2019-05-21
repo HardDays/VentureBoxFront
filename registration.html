@@ -53,8 +53,11 @@
 										Get Started
 								</a>
 							</li>
-							<li class="nav-item active">
+							<li class="nav-item active" id="login-block">
 								<a class="nav-link ml-4" href="registration.html">Log in <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item" id="username-block" style="display: none;">
+								<p class="nav-link ml-4" id="username-text">Username</p>
 							</li>
 						</ul>
 					</div>
@@ -104,12 +107,12 @@
 				<div class="registr-form__width">
 					<div class="registr-form__xs-padding">
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-1">Website</label>
-							<input class="input-groupe__input" type="text" id="input-1" placeholder="http://">
+							<label class="input-groupe__label" for="input-website">Website</label>
+							<input class="input-groupe__input" type="text" id="input-website" placeholder="http://">
 						</div>
 						<div class="input-groupe registr-form__input-groupe">
-							<label class="input-groupe__label" for="input-2">Company name</label>
-							<input class="input-groupe__input" type="text" id="input-2" placeholder="Company domain name or market name">
+							<label class="input-groupe__label" for="input-name">Company name</label>
+							<input class="input-groupe__input" type="text" id="input-name" placeholder="Company domain name or market name">
 						</div>
 					</div>
 					<div class="form-groupe form-groupe--margin-top registr-form__form-groupe">
@@ -318,7 +321,7 @@
 							</div>
 							<p class="one-checkbox__label">By checking this box, I agree and consent to transact business with Venture Box electronically, including signing and receiving documents, disclosures and other records electronically and as set forth in the Electronic Business Consent in our Terms of Use. </p>
 						</div>
-						<button class="registr-form__submit" >Send</button>
+						<p class="registr-form__submit" id="registr-form__button" >Send</p>
 					</div>
 				</div>
 			</form>
@@ -412,7 +415,24 @@
 	<script src="js/scripts.js"></script>
 
 	<script>
-		function sendRequestInfo() {
+
+		// var TOKEN = '';
+		// if (localStorage.getItem('token')) {
+        // 	TOKEN = localStorage.getItem('token');
+		// }
+		
+		// setUserOnHeader();
+
+		// function setUserOnHeader() {
+		// 	if (TOKEN) {
+		// 		$('#login-block').css({'display':'none'});
+		// 		$('#username-block').css({'display':'block'});
+		// 		var user = JSON.parse(localStorage.getItem('user'));
+		// 		$('#username-text').text(user.name + " " + user.surname);
+		// 	}
+		// }
+
+		function sendRequestUser() {
 
 			var dataUser = {
 				name: $("#input-firstname").val(),
@@ -423,6 +443,7 @@
 				password_confirmation: $("#input-password").val(),
 				role: "startup"
 			};
+
 			$.ajax("https://venture-box-back.herokuapp.com/users.json",{
 				data : JSON.stringify(dataUser),
 				contentType : 'application/json',
@@ -430,7 +451,10 @@
 				success: function(data,status){
 					if (status=='success') {
 						if(data) {
-							console.log(data);
+							localStorage.setItem('token', data['token']);
+							localStorage.setItem('user', JSON.stringify(data));
+							TOKEN = data['token'];
+							sendRequestCompany(data['id']);
 						}
 					}
 				}
@@ -439,9 +463,36 @@
 			});
 		}
 
-		$('#registr-form__submit').click(function (e) {
+		function sendRequestCompany(user_id) {
+
+			var dataCompany = {
+				name: $("#input-name").val(),
+				website: $("#input-website").val(),
+				description: ""
+			};
+			$.ajax("https://venture-box-back.herokuapp.com/users/"+user_id+"/companies.json",{
+				data : JSON.stringify(dataCompany),
+				contentType : 'application/json',
+				type : 'POST',
+				headers:{
+                    "Authorization": TOKEN
+                },
+				success: function(data,status){
+					if (status=='success') {
+						if(data) {
+							console.log(data);
+							location.href = '/';
+						}
+					}
+				}
+			}).fail(function(error) {
+				console.log(`Fail`);
+			});
+		}
+
+		$('#registr-form__button').click(function (e) {
 			e.preventDefault;
-			sendRequestInfo();
+			sendRequestUser();
 		});
 	</script>
 
