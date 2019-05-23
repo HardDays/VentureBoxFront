@@ -428,7 +428,7 @@
 				role: "ceo"
 			};
 
-			$.ajax("https://localhost:3000/users.json",{
+			$.ajax("https://startaventures.com:3000/users.json",{
 				data : JSON.stringify(dataUser),
 				contentType : 'application/json',
 				type : 'POST',
@@ -474,7 +474,7 @@
 				target_revenue: $('input[name=targetrevenue]:checked').val(),
 			};
 			console.log(dataCompany);
-			$.ajax("https://localhost:3000/users/"+user_id+"/companies.json",{
+			$.ajax("https://startaventures.com:3000/users/"+user_id+"/companies.json",{
 				data : JSON.stringify(dataCompany),
 				contentType : 'application/json',
 				type : 'POST',

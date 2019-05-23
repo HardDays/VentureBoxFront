@@ -368,7 +368,7 @@
 				interested_in_advisor: $("#checkbox-advisor").is(":checked"),
 				interested_in_purchasing: $("#checkbox-purchasing").is(":checked")
 			};
-			$.ajax("https://localhost:3000/requests.json",{
+			$.ajax("https://startaventures.com:3000/requests.json",{
 				data : JSON.stringify(data),
 				contentType : 'application/json',
 				type : 'POST',
